@@ -61,6 +61,10 @@ def selection_sort(a_list):
     return a_list
 
 
+def insertion_sort(a_list):
+    pass
+
+
 my_list = generate_list(10)
 print("Randomly-generated list to throw at bubble sort:\n" + str(my_list))
 print("Bubble sort results:\n" + str(bubble_sort(my_list)))
