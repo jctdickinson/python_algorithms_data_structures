@@ -61,14 +61,27 @@ def selection_sort(a_list):
     return a_list
 
 
+# Insertion sort
 def insertion_sort(a_list):
-    pass
+    for i in range(1, len(a_list)):
+        current_value = a_list[i]
+        position = i - 1
 
+        while (position >= 0) and (a_list[position] > current_value):
+            a_list[position + 1] = a_list[position]
+            position -= position
+        a_list[position] = current_value
+
+    return a_list
 
 my_list = generate_list(10)
 print("Randomly-generated list to throw at bubble sort:\n" + str(my_list))
-print("Bubble sort results:\n" + str(bubble_sort(my_list)))
+print("Bubble sort results:\n" + str(bubble_sort(my_list)) + "\n")
 
-my_list2 = generate_list(10)
-print("Randomly-generated list to throw at selection sort:\n" + str(my_list2))
-print("Selection sort results:\n" + str(selection_sort(my_list2)))
+my_list = generate_list(10)
+print("Randomly-generated list to throw at selection sort:\n" + str(my_list))
+print("Selection sort results:\n" + str(selection_sort(my_list)) + "\n")
+
+my_list = generate_list(10)
+print("Randomly-generated list to throw at insertion sort:\n" + str(my_list))
+print("Selection sort results:\n" + str(insertion_sort(my_list)) + "\n")
