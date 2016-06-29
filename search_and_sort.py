@@ -20,7 +20,7 @@ def generate_list(list_size):
 
 
 # Semi-optimized bubble sort algorithm
-# Time efficiency: O(n^2)
+# Time complexity: O(n^2)
 def bubble_sort(a_list):
     for i in range(len(a_list) - 1, 0, -1):
         # To keep track of number of swaps
@@ -38,6 +38,13 @@ def bubble_sort(a_list):
         if count is 0:
             break
     return a_list
+
+
+# Sort by lowest value or highest value
+# Time complexity: O(n^2)
+def selection_sort(a_list):
+    for i in range(len(a_list) - 1):
+        pass
 
 
 
