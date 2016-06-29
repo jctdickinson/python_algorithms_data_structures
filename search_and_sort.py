@@ -1,10 +1,16 @@
 """
 Collection of sorting and searching algorithms in Python
 By jctdickinson
+https://github.com/jctdickinson
 
 I would like to eventually add a suitable suite of unit tests to demonstrate
-each algorithm but for now playing with the provided generate_list function
-should suffice.
+each algorithm with its respective time complexity but for now playing with
+the provided generate_list function should suffice.
+
+A comparison of sorting algorithms to built in list.sort() would be fun.
+
+Thinking of adding swap function, but for now keeping each algorithm as modularly
+contained as possible.
 
 """
 
@@ -43,11 +49,23 @@ def bubble_sort(a_list):
 # Sort by lowest value or highest value
 # Time complexity: O(n^2)
 def selection_sort(a_list):
-    for i in range(len(a_list) - 1):
-        pass
+    for i in range(len(a_list)):
+        min = i
+        for j in range(i + 1, len(a_list)):
+            if a_list[j] < a_list[min]:
+                min = j
+        swap_value = a_list[min]
+        a_list[min] = a_list[i]
+        a_list[i] = swap_value
+    return a_list
+
 
 
 
 my_list = generate_list(10)
 print(my_list)
 print(bubble_sort(my_list))
+
+my_list2 = generate_list(10)
+print(my_list2)
+print(selection_sort(my_list2))
