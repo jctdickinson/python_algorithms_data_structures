@@ -1,5 +1,10 @@
 """
-Collection of sorting algorithms in Python
+Collection of sorting and searching algorithms in Python
+By jctdickinson
+
+I would like to eventually add a suitable suite of unit tests to demonstrate
+each algorithm but for now playing with the provided generate_list function
+should suffice.
 
 """
 
