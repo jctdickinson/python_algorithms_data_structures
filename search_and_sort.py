@@ -47,10 +47,10 @@ def bubble_sort(a_list):
 
 
 # Sort by lowest value or highest value
-# In this case we will sort by lowest value
 # Time complexity: O(n^2)
 def selection_sort(a_list):
     for i in range(len(a_list)):
+        # In this case we will sort by lowest value
         min_value = i
         for j in range(i + 1, len(a_list)):
             if a_list[j] < a_list[min_value]:
@@ -61,12 +61,10 @@ def selection_sort(a_list):
     return a_list
 
 
-
-
 my_list = generate_list(10)
-print(my_list)
-print(bubble_sort(my_list))
+print("Randomly-generated list to throw at bubble sort:\n" + str(my_list))
+print("Bubble sort results:\n" + str(bubble_sort(my_list)))
 
 my_list2 = generate_list(10)
-print(my_list2)
-print(selection_sort(my_list2))
+print("Randomly-generated list to throw at selection sort:\n" + str(my_list2))
+print("Selection sort results:\n" + str(selection_sort(my_list2)))
