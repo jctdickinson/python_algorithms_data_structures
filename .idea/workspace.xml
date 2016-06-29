@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84a0f1ad-0223-4de7-ae4c-d850e6a02aa8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search_and_sort.py" afterPath="$PROJECT_DIR$/search_and_sort.py" />
     </list>
     <ignored path="sorting_algorithms.iws" />
@@ -28,8 +26,8 @@
       <file leaf-file-name="search_and_sort.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/search_and_sort.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-598">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="-70">
+              <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -343,8 +341,8 @@
     <entry file="file://$PROJECT_DIR$/sorting_algorithms.py" />
     <entry file="file://$PROJECT_DIR$/search_and_sort.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-598">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="-70">
+          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
           <folding />
         </state>
       </provider>

@@ -47,15 +47,16 @@ def bubble_sort(a_list):
 
 
 # Sort by lowest value or highest value
+# In this case we will sort by lowest value
 # Time complexity: O(n^2)
 def selection_sort(a_list):
     for i in range(len(a_list)):
-        min = i
+        min_value = i
         for j in range(i + 1, len(a_list)):
-            if a_list[j] < a_list[min]:
-                min = j
-        swap_value = a_list[min]
-        a_list[min] = a_list[i]
+            if a_list[j] < a_list[min_value]:
+                min_value = j
+        swap_value = a_list[min_value]
+        a_list[min_value] = a_list[i]
         a_list[i] = swap_value
     return a_list
 
