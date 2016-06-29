@@ -63,15 +63,21 @@ def selection_sort(a_list):
 
 # Insertion sort
 def insertion_sort(a_list):
+    # Sorting starts from left, so first element is considered sorted
     for i in range(1, len(a_list)):
+        # Save current value from element 1
         current_value = a_list[i]
+        # Store position to compare with current_value as element one to the left
         position = i - 1
 
+        # As long as position is greater, loop
         while (position >= 0) and (a_list[position] > current_value):
+            # Shift value of greater number up one index
             a_list[position + 1] = a_list[position]
+            # Decrement position value for next iteration
             position -= position
+        # Change current_value to continue iteration and avoid infinite loop
         a_list[position] = current_value
-
     return a_list
 
 my_list = generate_list(10)
@@ -84,4 +90,4 @@ print("Selection sort results:\n" + str(selection_sort(my_list)) + "\n")
 
 my_list = generate_list(10)
 print("Randomly-generated list to throw at insertion sort:\n" + str(my_list))
-print("Selection sort results:\n" + str(insertion_sort(my_list)) + "\n")
+print("Insertion sort results:\n" + str(selection_sort(my_list)))
