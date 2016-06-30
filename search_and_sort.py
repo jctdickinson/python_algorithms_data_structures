@@ -82,13 +82,13 @@ def insertion_sort(a_list):
     return a_list
 
 my_list = generate_list(10)
-print("Randomly-generated list to feed bubble sort:\n" + str(my_list))
-print("Bubble sort results:\n" + str(bubble_sort(my_list)) + "\n")
+print("Randomly-generated list to feed bubble sort:\n", my_list)
+print("Bubble sort results:\n", bubble_sort(my_list), "\n")
 
 my_list = generate_list(10)
-print("Randomly-generated list to feed selection sort:\n" + str(my_list))
-print("Selection sort results:\n" + str(selection_sort(my_list)) + "\n")
+print("Randomly-generated list to feed selection sort:\n", my_list)
+print("Selection sort results:\n", selection_sort(my_list), "\n")
 
 my_list = generate_list(10)
-print("Randomly-generated list to feed insertion sort:\n" + str(my_list))
-print("Insertion sort results:\n" + str(selection_sort(my_list)))
+print("Randomly-generated list to feed insertion sort:\n", my_list)
+print("Insertion sort results:\n", selection_sort(my_list))
