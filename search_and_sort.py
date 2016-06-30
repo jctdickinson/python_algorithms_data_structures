@@ -26,7 +26,7 @@ def generate_list(list_size):
 
 
 # Semi-optimized bubble sort algorithm
-# Time complexity: O(n^2)
+# Time complexity: O(n**2)
 def bubble_sort(a_list):
     for i in range(len(a_list) - 1, 0, -1):
         # To keep track of number of swaps
@@ -47,7 +47,7 @@ def bubble_sort(a_list):
 
 
 # Sort by lowest value or highest value
-# Time complexity: O(n^2)
+# Time complexity: O(n**2)
 def selection_sort(a_list):
     for i in range(len(a_list)):
         # In this case we will sort by lowest value
@@ -62,6 +62,7 @@ def selection_sort(a_list):
 
 
 # Insertion sort
+# Time complexity O(n**2)
 def insertion_sort(a_list):
     # Sorting starts from left, so first element is considered sorted
     for i in range(1, len(a_list)):
@@ -81,13 +82,13 @@ def insertion_sort(a_list):
     return a_list
 
 my_list = generate_list(10)
-print("Randomly-generated list to throw at bubble sort:\n" + str(my_list))
+print("Randomly-generated list to feed bubble sort:\n" + str(my_list))
 print("Bubble sort results:\n" + str(bubble_sort(my_list)) + "\n")
 
 my_list = generate_list(10)
-print("Randomly-generated list to throw at selection sort:\n" + str(my_list))
+print("Randomly-generated list to feed selection sort:\n" + str(my_list))
 print("Selection sort results:\n" + str(selection_sort(my_list)) + "\n")
 
 my_list = generate_list(10)
-print("Randomly-generated list to throw at insertion sort:\n" + str(my_list))
+print("Randomly-generated list to feed insertion sort:\n" + str(my_list))
 print("Insertion sort results:\n" + str(selection_sort(my_list)))
