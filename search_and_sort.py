@@ -17,13 +17,26 @@ contained as possible.
 import random
 
 
-#Sequential search
+# Sequential search
+# For loop iteration not working for some (probably obvious) reason..
+# This version uses a flag
 def sequential_search(a_list, item):
-    for i in range(len(a_list)):
-        if a_list[i] is item:
-            return True
+    # for i in range(len(a_list)):
+    #     print(i)
+    #     if a_list[i] is item:
+    #         return True
+    #     else:
+    #         return False
+    in_list = False
+    index = 0
+
+    while index < len(a_list) > 0 and not in_list:
+        if a_list[index] is item:
+            in_list = True
         else:
-            return False
+            index += 1
+
+    return in_list
 
 
 # Generates list of user-defined number of elements
@@ -89,6 +102,10 @@ def insertion_sort(a_list):
         # Change current_value to continue iteration and avoid infinite loop
         a_list[position] = current_value
     return a_list
+
+my_list = generate_list(10)
+print("Randomly-generated list to feed sequential search (testing against value of 10):\n", my_list)
+print("Sequential search results:\n", sequential_search(my_list, 10), "\n")
 
 my_list = generate_list(10)
 print("Randomly-generated list to feed bubble sort:\n", my_list)
