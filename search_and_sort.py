@@ -30,7 +30,7 @@ def sequential_search(a_list, item):
     in_list = False
     index = 0
 
-    while index < len(a_list) > 0 and not in_list:
+    while index < len(a_list) and not in_list:
         if a_list[index] is item:
             in_list = True
         else:
