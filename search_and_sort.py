@@ -17,6 +17,15 @@ contained as possible.
 import random
 
 
+#Sequential search
+def sequential_search(a_list, item):
+    for i in range(len(a_list)):
+        if a_list[i] is item:
+            return True
+        else:
+            return False
+
+
 # Generates list of user-defined number of elements
 def generate_list(list_size):
     a_list = []
@@ -46,7 +55,7 @@ def bubble_sort(a_list):
     return a_list
 
 
-# Sort by lowest value or highest value
+# Selection sort, sorted by lowest value or highest value
 # Time complexity: O(n**2)
 def selection_sort(a_list):
     for i in range(len(a_list)):
