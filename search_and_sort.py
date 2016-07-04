@@ -16,7 +16,6 @@ contained as possible.
 
 import random
 
-
 # Sequential search
 # For loop iteration not working for some (probably obvious) reason..
 # This version uses a flag
@@ -37,6 +36,18 @@ def sequential_search(a_list, item):
             index += 1
 
     return in_list
+
+
+def binary_search(a_list, item):
+    if len(a_list is 0):
+        return False
+    else:
+        midpoint = len(a_list) // 2
+        if a_list[midpoint] is item:
+            return True
+        else:
+            if item < a_list[midpoint]
+
 
 
 # Generates list of user-defined number of elements
@@ -103,7 +114,7 @@ def insertion_sort(a_list):
         a_list[position] = current_value
     return a_list
 
-my_list = generate_list(10)
+my_list = generate_list(20)
 print("Randomly-generated list to feed sequential search (testing against value of 10):\n", my_list)
 print("Sequential search results:\n", sequential_search(my_list, 10), "\n")
 
