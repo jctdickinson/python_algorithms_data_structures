@@ -39,15 +39,20 @@ def sequential_search(a_list, item):
 
 
 def binary_search(a_list, item):
-    if len(a_list is 0):
+    if len(a_list) is 0:
         return False
     else:
+        # List must be sorted for binary_search to work
+        # Temporarily using insertion sort
+        insertion_sort(a_list)
         midpoint = len(a_list) // 2
         if a_list[midpoint] is item:
             return True
         else:
-            if item < a_list[midpoint]
-
+            if item < a_list[midpoint]:
+                return binary_search(a_list[:midpoint], item)
+            else:
+                return binary_search(alist[midpoint + 1:], item)
 
 
 # Generates list of user-defined number of elements
@@ -117,6 +122,10 @@ def insertion_sort(a_list):
 my_list = generate_list(20)
 print("Randomly-generated list to feed sequential search (testing against value of 10):\n", my_list)
 print("Sequential search results:\n", sequential_search(my_list, 10), "\n")
+
+my_list = generate_list(20)
+print("Randomly-generated list to feed sequential search (testing against value of 10):\n", my_list)
+print("Binary search results:\n", binary_search(my_list, 10), "\n")
 
 my_list = generate_list(10)
 print("Randomly-generated list to feed bubble sort:\n", my_list)
